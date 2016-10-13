@@ -1,0 +1,87 @@
+*{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	
+}
+.container{
+	width:100%;
+	float:left;
+	position:relative;
+	height:300px;
+	
+}
+.container>div{
+	height:80px;
+	width:200px;
+	background:green;
+	color:white;
+	position:absolute;
+	left:0px;
+	animation:move;
+	animation-duration:5s;
+	animation-iteration-count:2;
+	animation-direction:alternate;
+	animation-timing-function:ease-in-out;
+	   -webkit-animation-fill-mode: forwards;
+	   animation-fill-mode: forwards;
+}
+
+
+@keyframes move{
+	0%{
+		left:0px;
+		
+	}50%{
+		background:red;
+		transform:rotate(-30deg)
+	}100%{
+		left:100%;
+	}
+	
+}
+
+
+
+
+
+
+
+
+/* 3d styling start */
+
+.box{
+	width:150px;
+	height:200px;
+	background:green;
+	margin:auto;
+	transform:rotateX(-160deg);
+	
+}
+
+
+
+
+.gradiant{
+	height:400px;
+	width:100%;
+	float:left;
+	border:2px solid green;
+	
+}
+.linear{
+	background: linear-gradient(to right,violet,green ); 
+
+}
+
+.radial{
+		background: radial-gradient(farthest-side at 80% 10%, red, yellow, black);
+
+}
+
+
+
+
+
+
+
